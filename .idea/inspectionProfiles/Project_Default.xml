@@ -1,0 +1,29 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+<<<<<<< HEAD
+          <option value="N802" />
+=======
+          <option value="N803" />
+          <option value="N802" />
+          <option value="N806" />
+>>>>>>> 271891e39e6ce284da1c675c76aee0769a5c65f6
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+<<<<<<< HEAD
+          <option value="ticTacToeTasks.board.current_player.*" />
+=======
+          <option value="get_array_list" />
+>>>>>>> 271891e39e6ce284da1c675c76aee0769a5c65f6
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
