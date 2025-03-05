@@ -1,10 +1,7 @@
 from exceptions.exception import *
-
-
 class Grade:
-
+    
     MAXIMUM_GRADE = 100
-
     def __init__(self, first_ca, second_ca, exam):
         self.validate_ca(first_ca)
         self.validate_ca2(second_ca)

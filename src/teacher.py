@@ -11,7 +11,7 @@ class Teacher:
         self.__password = password
         self.__name = name
         self.students = []
-        self.__courses = []
+        self.__courses = { }
         self.teachers = []
         self.__logged_in = False
 
@@ -79,9 +79,7 @@ class Teacher:
         for every_char in names:
             if not every_char.isalpha():
                 raise InvalidNameException("Name must contain only alphabetic character.")
-
-
-
+            
     @staticmethod
     def validate_password(password):
         if len(password) < 5:

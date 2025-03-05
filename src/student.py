@@ -23,7 +23,6 @@ class Student(Teacher):
         super().validate_password(new_password)
         super().register(new_name, new_email, new_password)
 
-
     def login(self, email, password):
         try:
             if super().login(email, password):
@@ -45,6 +44,20 @@ class Student(Teacher):
                 raise NotFoundException("Course exit ")
         self.__courses.append(new_course)
 
+    def remove_course(self, new_course: Course):
+        if not isinstance(new_course, Course):
+            raise TypeError("new_course must be a Course.")
+        if new_course in self.__courses:
+            self.__courses.remove(new_course)
+        else:
+            raise ValueError("Course not found in the list.")
+
+    def find_course_by_name(self, course_name: str):
+        for course in self.__courses:
+            if course.name == course_name:
+                return course
+        raise ValueError(f"Course named {course_name} not found.")
+
     def view_courses(self) -> list:
         for course in self.__courses:
             return course
@@ -65,6 +78,9 @@ class Student(Teacher):
 
     @staticmethod
     def verify_name(name ):
+        if not name in Student.validate_name(name):
+            raise NotFoundException("Name doesnt exit ")
+
 
 
 
