@@ -71,8 +71,6 @@ class Course:
     def __str__(self):
         return f"Course = {self.course_code}, Title =  {self.title}"
 
-
-
 # def save_course_data(course, filename:str="course.pickle"):
 #     with open(filename, "wb") as file:
 #         pickle.dump(course, file)
